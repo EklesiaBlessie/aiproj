@@ -1,0 +1,92 @@
+========================================================
+  AI PRODUCT MANAGER COPILOT — STARTUP COMMANDS
+========================================================
+Run each section in a SEPARATE terminal window.
+All paths are relative to the project root:
+  D:\AI-Product-Manager-Copilot-main\
+
+--------------------------------------------------------
+  1. FRONTEND  (React + Vite — port 3000)
+--------------------------------------------------------
+  cd client
+  npm run dev
+
+  Opens at: http://localhost:3000
+
+--------------------------------------------------------
+  2. EXPRESS BACKEND  (Node.js API — port 5000)
+--------------------------------------------------------
+  cd backend
+  npm run dev
+
+  API root:  http://localhost:5000
+  Swagger:   http://localhost:5000/api-docs
+
+--------------------------------------------------------
+  3. FASTAPI BACKEND  (existing analysis service — port 8000)
+--------------------------------------------------------
+  cd fastapi_backend
+  .\venv\Scripts\activate           # Windows
+  uvicorn main:app --reload --port 8000
+
+  Endpoints:
+    POST http://localhost:8000/upload
+    POST http://localhost:8000/analyze
+
+  Note: requires the backend\backend\analysis path for batch_analyzer.py
+
+--------------------------------------------------------
+  4. FEEDBACK PIPELINE  (Groq preprocessing service — port 8001)
+--------------------------------------------------------
+  cd feedback-pipeline
+  .\venv\Scripts\uvicorn app:app --reload --port 8001
+
+  Endpoints:
+    GET  http://localhost:8001/          — health check
+    POST http://localhost:8001/upload    — full pipeline + Groq analysis
+
+  Note: GROQ_API_KEY must be set in feedback-pipeline\.env
+
+--------------------------------------------------------
+  5. AI SERVICE  (Qdrant + Gemini RAG service — optional)
+--------------------------------------------------------
+  cd ai-service
+  # Install deps if first run:
+  pip install -r requirements.txt
+  # Start:
+  uvicorn app.main:app --reload --port 8002
+
+  Endpoints:
+    POST http://localhost:8002/copilot
+    POST http://localhost:8002/prd
+    POST http://localhost:8002/prioritize
+
+--------------------------------------------------------
+  ENVIRONMENT FILES TO CHECK
+--------------------------------------------------------
+  backend\.env
+    MONGO_URI=...
+    PORT=5000
+    CORS_ORIGIN=http://localhost:3000
+    FASTAPI_URL=http://localhost:8000
+    PIPELINE_URL=http://localhost:8001
+    JWT_SECRET=...
+    JWT_EXPIRES_IN=7d
+
+  feedback-pipeline\.env
+    GROQ_API_KEY=...
+
+  ai-service\.env (optional)
+    GEMINI_API_KEY=...
+
+--------------------------------------------------------
+  RECOMMENDED STARTUP ORDER
+--------------------------------------------------------
+  1. feedback-pipeline  (port 8001)
+  2. fastapi_backend    (port 8000)
+  3. backend            (port 5000)
+  4. client             (port 3000)
+
+  ai-service is optional and can be started any time.
+
+========================================================

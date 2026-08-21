@@ -1,0 +1,51 @@
+DELIVERY APP FEATURE ENGINEERING REPORT
+=================================================================
+
+Input file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\processed\normalized_feedback.csv
+Output file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\processed\final_feedback_dataset.csv
+
+Rows before feature engineering: 1080
+Rows after feature engineering: 1080
+Rows removed: 0
+
+GENERATED FEATURES
+-----------------------------------------------------------------
+- feedback_length
+- feedback_word_count
+- has_question
+- has_exclamation
+- is_feature_request
+- issue_type
+- primary_issue_type
+- has_rating
+- has_feedback_text
+
+ISSUE TYPE COUNTS
+-----------------------------------------------------------------
+app_crash: 78
+ui_ux: 78
+performance: 77
+login_auth: 77
+payment: 77
+order_tracking: 77
+notifications: 77
+search: 77
+cart_checkout: 276
+feature_request: 216
+customer_support: 216
+account: 144
+
+OTHER FEATURE COUNTS
+-----------------------------------------------------------------
+Feature requests: 216
+Feedback containing questions: 0
+Feedback containing exclamations: 0
+
+IMPORTANT
+-----------------------------------------------------------------
+This stage creates analytical features only.
+Sentiment, priority, severity, and final AI classification are intentionally NOT generated here because they belong to the downstream AI analysis layer.
+
+STATUS
+-----------------------------------------------------------------
+Feature engineering completed successfully.

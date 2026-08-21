@@ -1,0 +1,63 @@
+DELIVERY APP PRODUCT RELEVANCE REPORT
+=================================================================
+
+Input file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\processed\cleaned_feedback.csv
+Output file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\processed\product_feedback.csv
+
+Input rows: 1200
+Product-relevant rows retained: 1080
+Restaurant/food-only rows excluded: 120
+Retention percentage: 90.00%
+Exclusion percentage: 10.00%
+
+RETAINED PRODUCT AREAS
+-----------------------------------------------------------------
+- App crashes
+- UI/UX
+- Performance
+- Login/Auth
+- Payments
+- Order tracking
+- Notifications
+- Search
+- Cart/Checkout
+- Feature requests
+- Customer support
+- Account issues
+- Delivery-app experience
+
+EXCLUDED AREAS
+-----------------------------------------------------------------
+- Food taste
+- Food quality
+- Food temperature
+- Portion size
+- Restaurant ambience
+- Restaurant staff
+- Packaging
+- Food preparation
+- Other restaurant-only complaints
+
+FILTERING LOGIC
+-----------------------------------------------------------------
+Food/restaurant-only complaints are excluded.
+Product/app complaints are retained even when they mention food or an order.
+Unknown feedback is retained rather than discarded.
+
+EXAMPLES
+-----------------------------------------------------------------
+"The food was cold when it arrived" -> EXCLUDED
+"The restaurant staff were rude" -> EXCLUDED
+"The app showed my order as delivered while the food was still being prepared" -> RETAINED
+"Money was deducted but the order was not confirmed" -> RETAINED
+"The app crashes whenever I open the orders page" -> RETAINED
+
+ROW PRESERVATION
+-----------------------------------------------------------------
+Rows retained: 1080
+Rows excluded: 120
+Rows accounted for: 1200
+
+STATUS
+-----------------------------------------------------------------
+Product relevance filtering completed successfully.
