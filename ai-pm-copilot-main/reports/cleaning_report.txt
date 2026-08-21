@@ -1,0 +1,23 @@
+DELIVERY APP DATA CLEANING REPORT
+============================================================
+
+Input file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\raw\raw_feedback.csv
+Output file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\processed\cleaned_feedback.csv
+
+Rows before cleaning: 1200
+Rows after cleaning: 1200
+Total rows removed: 0
+
+CLEANING OPERATIONS
+------------------------------------------------------------
+Empty feedback rows removed: 0
+Duplicate feedback rows removed: 0
+Placeholder feedback rows removed: 0
+Invalid ratings converted to missing: 0
+
+OPTIONAL FIELDS WERE PRESERVED WHEN EMPTY.
+Missing source, app name, rating, date, language, or platform values were NOT used as reasons to remove rows.
+
+STATUS
+------------------------------------------------------------
+Cleaning completed successfully.

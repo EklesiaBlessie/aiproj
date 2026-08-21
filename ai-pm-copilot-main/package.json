@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sonner": "^2.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "vite": "^8.2.1"
+  }
+}

@@ -1,0 +1,32 @@
+==================================================
+VALIDATION REPORT
+==================================================
+
+Total Records : 289
+
+Duplicate Rows : 8
+Duplicate Feedback IDs : 88
+Invalid Ratings : 0
+Invalid Dates : 16
+Empty Feedback : 0
+
+Missing Values
+----------------------------------------
+feedback_id               : 79
+customer_id               : 83
+restaurant_id             : 79
+restaurant_name           : 79
+feedback_text             : 0
+rating                    : 90
+source                    : 0
+created_date              : 0
+city                      : 79
+language                  : 79
+reviewer_name             : 79
+state                     : 79
+review_title              : 85
+visit_type                : 79
+post_id                   : 210
+platform                  : 210
+username                  : 210
+engagement                : 210

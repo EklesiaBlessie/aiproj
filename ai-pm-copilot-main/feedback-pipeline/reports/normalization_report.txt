@@ -1,0 +1,35 @@
+
+==========================================================
+NORMALIZATION REPORT
+==========================================================
+
+Input File :
+D:\AI-Product-Manager-Copilot-main\feedback-pipeline\dataset\processed\cleaned_feedback.csv
+
+Output File :
+D:\AI-Product-Manager-Copilot-main\feedback-pipeline\dataset\processed\normalized_feedback.csv
+
+Total Rows Processed :
+201
+
+Rows Removed :
+0
+
+Date Values Normalized :
+78
+
+Source Values Normalized :
+200
+
+Restaurant Names Normalized :
+201
+
+Language Values Normalized :
+1
+
+Ratings Normalized :
+11
+
+Normalization Completed Successfully.
+
+==========================================================
