@@ -1,0 +1,41 @@
+DELIVERY APP DATASET VALIDATION REPORT
+=======================================================
+
+Input file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\source_data\delivery_app_feedback.csv
+Output file: C:\Users\Sarayu\ai-pm\AI-Product-Manager-Copilot\dataset\raw\raw_feedback.csv
+
+Original rows: 1200
+Validated rows: 1200
+Rows removed: 0
+
+SCHEMA
+-------------------------------------------------------
+- feedback_id
+- source
+- app_name
+- feedback_text
+- rating
+- created_date
+- language
+- platform
+
+VALIDATION RESULTS
+-------------------------------------------------------
+Missing feedback IDs: 0
+Duplicate feedback IDs: 0
+Rows with missing/empty feedback text removed: 0
+Invalid ratings converted to missing: 0
+Invalid/unparseable dates detected: 0
+
+OPTIONAL FIELD MISSING VALUES
+-------------------------------------------------------
+source: 0
+app_name: 0
+rating: 165
+created_date: 0
+language: 0
+platform: 0
+
+STATUS
+-------------------------------------------------------
+Validation completed successfully.

@@ -1,0 +1,53 @@
+
+==========================================================
+FEATURE ENGINEERING REPORT
+==========================================================
+
+Input File:
+D:\AI-Product-Manager-Copilot-main\feedback-pipeline\dataset\processed\normalized_feedback.csv
+
+Output File:
+D:\AI-Product-Manager-Copilot-main\feedback-pipeline\dataset\processed\final_feedback_dataset.csv
+
+Rows Processed:
+201
+
+Features Added:
+
+[OK] review_length
+[OK] word_count
+[OK] has_rating
+[OK] rating_category
+[OK] contains_complaint
+[OK] contains_praise
+[OK] contains_request
+[OK] contains_bug
+[OK] contains_delivery_issue
+[OK] contains_service_issue
+[OK] contains_food_issue
+[OK] sentiment_hint
+[OK] feedback_priority
+
+Summary
+
+Positive Feedback :
+98
+
+Neutral Feedback :
+42
+
+Negative Feedback :
+61
+
+High Priority :
+109
+
+Medium Priority :
+47
+
+Low Priority :
+45
+
+Completed Successfully.
+
+==========================================================
